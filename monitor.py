@@ -11,7 +11,7 @@ tipos = {}
 
 def ler_porcentagem(recurso):
     while True:
-        entrada = input(recurso = " (%): ")
+        entrada = input(f"{recurso} (%): ")
 
         if entrada.isascii() and entrada.isdigit():
             valor = int(entrada)
@@ -19,11 +19,11 @@ def ler_porcentagem(recurso):
             if 0 <= valor <= 100:
                 return valor
 
-        print("Digite um numero de 0 a 100: ")
+        print("Digite um número de 0 a 100: ")
 
 def verificar_status(valor):
     if valor >= 90:
-        return "Critico"
+        return "Crítico"
     elif valor >= 80:
         return "Atenção"
     else:
@@ -42,7 +42,7 @@ def exibir_servidores(servidores, utilizacao, tipos, i):
 
         print(f"{recursos[j]}: {valor}% - {status}")
 
-    maior = max(utilizacao[j])
+    maior = max(utilizacao[i])
     print("Situação geral: ", verificar_status(maior))
 
 while True:
@@ -52,7 +52,7 @@ while True:
     print("3 - Atualizar utilização")
     print("4 - Consultar servidor")
     print("5 - Remover servidor")
-    print("6 - Relatorio geral")
+    print("6 - Relatório geral")
     print("0 - Sair")
 
     opcao = input("Selecione uma opção: ")
@@ -80,4 +80,4 @@ while True:
         break
 
     else:
-        print("Opção invalida!")
+        print("Opção inválida!")

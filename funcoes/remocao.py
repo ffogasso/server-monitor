@@ -4,7 +4,7 @@ def remover(servidores, utilizacao, tipos):
     nome = input("Nome do servidor: ").strip().upper()
 
     if nome not in servidores:
-        print("Servidor não encotrado!")
+        print("Servidor não encontrado!")
         return
 
     confirmacao = input("Confirma a remoção? (S/N): ").upper()

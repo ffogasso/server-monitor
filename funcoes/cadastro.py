@@ -3,28 +3,28 @@ def cadastrar(servidores, utilizacao, tipos, ler_porcentagem):
     nome = input("Nome do servidor: ").strip().upper()
 
     if nome == "":
-        print("Nome invalido!")
+        print("Nome inválido!")
         return
 
     # Impedir servidores duplicados
     if nome in servidores:
-        print("Servidor ja cadastrado!")
+        print("Servidor já cadastrado!")
         return
 
     tipo = input("Finalidade do Servidor: ").strip()
 
     if tipo == "":
-        print("Finalidade invalida!")
+        print("Finalidade inválida!")
         return
 
-    # informar dados de utilizacao
+    # Informar dados de utilização
     cpu = ler_porcentagem("CPU")
     ram = ler_porcentagem("RAM")
     disco = ler_porcentagem("Disco")
 
     servidores.append(nome)
 
-    servidores.append([cpu, ram, disco])
+    utilizacao.append([cpu, ram, disco])
 
     tipos[nome] = tipo
 

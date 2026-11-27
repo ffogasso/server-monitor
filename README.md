@@ -31,7 +31,7 @@ A situação geral de cada servidor é determinada pelo recurso que apresenta a 
 
 ## Estrutura do projeto
 
-- `main.py` — Menu principal, estruturas de dados e funções reutilizáveis.
+- `monitor.py` — Menu principal, estruturas de dados e funções reutilizáveis.
 - `funcoes/`
   - `cadastro.py` — Cadastro de servidores.
   - `listagem.py` — Listagem de servidores.
@@ -62,7 +62,7 @@ A situação geral de cada servidor é determinada pelo recurso que apresenta a 
 
 1. Clone ou baixe este repositório.
 2. Abra a pasta do projeto no terminal.
-3. Execute o comando `python main.py` ou `python3 main.py`.
+3. Execute o comando `python monitor.py` ou `python3 monitor.py`.
 4. Selecione a operação desejada no menu principal.
 
 ## Limitações

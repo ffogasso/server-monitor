@@ -23,7 +23,7 @@ def relatorio(servidores, utilizacao, tipos,
         maior = max(utilizacao[i])
         status = verificar_status(maior)
 
-        if status == "Critico":
+        if status == "Crítico":
             criticos += 1
 
         elif status == "Atenção":
@@ -39,12 +39,12 @@ def relatorio(servidores, utilizacao, tipos,
 
     print("Total de servidores: ", quantidade)
     print("Servidores normais: ", normais)
-    print("Servidores em atençao: ", atencao)
-    print("Servidores criticos: ", criticos)
+    print("Servidores em atenção: ", atencao)
+    print("Servidores críticos: ", criticos)
 
-    print("\n----- Media da Utilização -----")
+    print("\n----- Média da Utilização -----")
 
     for j in range(3):
         media = somas[j] / quantidade
 
-        print(f"Media de {recursos[j]}: {media:.2f}%")
+        print(f"Média de {recursos[j]}: {media:.2f}%")
